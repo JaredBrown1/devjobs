@@ -3,6 +3,7 @@ import Link from "next/link";
 
 interface JobCardProps {
 	params: {
+		id: string;
 		logo: string;
 		postedAt: string;
 		contract: string;

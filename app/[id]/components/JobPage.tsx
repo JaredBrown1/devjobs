@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface JobPageProps {
 	params: {
 		postedAt: string;
@@ -5,6 +7,7 @@ interface JobPageProps {
 		position: string;
 		location: string;
 		description: string;
+		logo: string;
 		requirements: {
 			content: string;
 			items: [];
@@ -23,7 +26,17 @@ const JobPage = ({ params }: JobPageProps) => {
 
 	return (
 		<div>
-			<div>Job Posting info + link here</div>
+			<div className="w-[730px] h-[140px] ">
+				<div>
+					<Image
+						src={params.logo}
+						alt="company logo"
+						width={140}
+						height={140}
+					/>
+				</div>
+				<div></div>
+			</div>
 			<div>
 				<div>
 					<div>
@@ -40,17 +53,17 @@ const JobPage = ({ params }: JobPageProps) => {
 				</div>
 				<div>
 					<h1>Requirements</h1>
-					{/* <p>{params.requirements.content}</p>
+					<p>{params.requirements.content}</p>
 					{params.requirements.items.map((item) => (
 						<p key={item}>{item}</p>
-					))} */}
+					))}
 				</div>
 				<div>
 					<h1>What you will do</h1>
-					{/* <p>{params.role.content}</p>
+					<p>{params.role.content}</p>
 					{params.role.items.map((item) => (
 						<p key={item}>{item}</p>
-					))} */}
+					))}
 				</div>
 			</div>
 			<div>Footer</div>
