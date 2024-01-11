@@ -11,7 +11,7 @@ interface JobPageHeaderProps {
 
 const JobPageHeader = ({ params }: JobPageHeaderProps) => {
 	return (
-		<div className="w-[730px] h-[140px] flex bg-white rounded-md">
+		<div className="w-[730px] h-[140px] flex bg-white rounded-md mt-[-50px]">
 			<div className="w-[140px]">
 				<Image src={params.logo} alt="company logo" width={140} height={140} />
 			</div>

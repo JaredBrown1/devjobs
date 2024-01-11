@@ -29,7 +29,7 @@ const JobPage = ({ params }: JobPageProps) => {
 	return (
 		<div className="flex flex-col justify-center items-center">
 			<JobPageHeader params={params} />
-			<div className="w-[730px] h-[1257px] flex bg-white rounded-md flex-col">
+			<div className="w-[730px] h-[1257px] flex bg-white rounded-md flex-col mt-10">
 				<div>
 					<div>
 						<p>{params.postedAt}</p>
