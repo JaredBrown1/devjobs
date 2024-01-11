@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 
 const Header = () => {
 	return (
-		<div className="flex flex-col justify-between bg-header-pattern bg-no-repeat h-[160px] w-full pt-[44px] mb-20">
+		<div className="flex flex-col justify-between bg-header-pattern bg-no-repeat h-[160px] w-full pt-[44px]">
 			<div className="flex justify-between">
 				<div className="pl-[165px]">
 					<Image
@@ -38,10 +38,6 @@ const Header = () => {
 						/>
 					</span>
 				</div>
-			</div>
-
-			<div className="pt-10 flex justify-center">
-				<SearchBar />
 			</div>
 		</div>
 	);
