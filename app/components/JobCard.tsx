@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface JobCardProps {
 	params: {
@@ -16,24 +17,26 @@ const JobCard = ({ params }: JobCardProps) => {
 	}
 
 	return (
-		<div className="w-[350px] h-[228px] bg-white rounded-md m-[30px]">
-			<div>
-				<Image
-					src={params.logo}
-					alt="Picture of the author"
-					width={20}
-					height={20}
-				/>
-			</div>
-			<div>
+		<Link href={`${params.id}`}>
+			<div className="w-[350px] h-[228px] bg-white rounded-md m-[30px]">
 				<div>
-					<p>{params.postedAt}</p>
-					<p>{params.contract}</p>
-					<p>{params.company}</p>
+					<Image
+						src={params.logo}
+						alt="Picture of the author"
+						width={50}
+						height={50}
+					/>
 				</div>
+				<div>
+					<div>
+						<p>{params.postedAt}</p>
+						<p>{params.contract}</p>
+						<p>{params.company}</p>
+					</div>
+				</div>
+				<div>{params.location}</div>
 			</div>
-			<div>{params.location}</div>
-		</div>
+		</Link>
 	);
 };
 export default JobCard;
