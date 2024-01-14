@@ -38,7 +38,9 @@ const JobCard = ({ params }: JobCardProps) => {
 							<p className="text-[#6E8098]">{params.contract}</p>
 						</div>
 
-						<h1 className="pt-[12px] font-bold text-xl">{params.position}</h1>
+						<h1 className="pt-[12px] font-bold text-xl hover:text-[#6E8098]">
+							{params.position}
+						</h1>
 
 						<p className="pt-[12px] text-[#6E8098]">{params.company}</p>
 					</div>

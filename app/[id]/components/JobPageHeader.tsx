@@ -22,7 +22,7 @@ const JobPageHeader = ({ params }: JobPageHeaderProps) => {
 				</div>
 				<div>
 					<Link href={params.website}>
-						<button className="bg-[#5964E0] text-[#5964E0] bg-opacity-[0.2] w-[147px] h-[48px] rounded-md font-bold">
+						<button className="bg-[#5964E0] text-[#5964E0] bg-opacity-[0.2] w-[147px] h-[48px] rounded-md font-bold hover:bg-opacity-[0.3512]">
 							Company Site
 						</button>
 					</Link>

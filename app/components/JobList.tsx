@@ -1,11 +1,15 @@
+"use client";
+
+import { useState } from "react";
+
 import JobCard from "./JobCard";
 
-import data from "../data.json";
+import Data from "../data.json";
 
-const JobList = () => {
+const JobList = ({ params }: any) => {
 	return (
 		<div className="w-[1150px] flex flex-wrap justify-center pt-[40px]">
-			{data.map((job) => (
+			{params.map((job: any) => (
 				<JobCard key={job.id} params={job} />
 			))}
 		</div>

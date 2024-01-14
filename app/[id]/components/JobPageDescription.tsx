@@ -41,7 +41,7 @@ const JobPageDescription = ({ params }: JobPageProps) => {
 					</div>
 					<div>
 						<Link href={params.apply}>
-							<button className="bg-[#5964E0] text-white w-[141px] h-[48px] rounded-md">
+							<button className="bg-[#5964E0] text-white w-[141px] h-[48px] rounded-md hover:bg-[#939bf4]">
 								Apply Now
 							</button>
 						</Link>
