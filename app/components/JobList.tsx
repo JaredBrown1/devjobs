@@ -4,7 +4,7 @@ import data from "../data.json";
 
 const JobList = () => {
 	return (
-		<div className="w-[1110px] flex flex-wrap justify-center">
+		<div className="w-[1150px] flex flex-wrap justify-center pt-[40px]">
 			{data.map((job) => (
 				<JobCard key={job.id} params={job} />
 			))}

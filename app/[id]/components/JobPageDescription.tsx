@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface JobPageProps {
 	params: {
 		postedAt: string;
@@ -5,6 +7,7 @@ interface JobPageProps {
 		position: string;
 		location: string;
 		description: string;
+		apply: string;
 		requirements: {
 			content: string;
 			items: [];
@@ -37,9 +40,11 @@ const JobPageDescription = ({ params }: JobPageProps) => {
 						</div>
 					</div>
 					<div>
-						<button className="bg-[#5964E0] text-white w-[141px] h-[48px] rounded-md">
-							Apply Now
-						</button>
+						<Link href={params.apply}>
+							<button className="bg-[#5964E0] text-white w-[141px] h-[48px] rounded-md">
+								Apply Now
+							</button>
+						</Link>
 					</div>
 				</div>
 				<div className="pt-11 text-[#6e8098]  text-[16px]">
