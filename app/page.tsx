@@ -18,7 +18,6 @@ export default function Home() {
 				job.location.toLowerCase().includes(location.toLowerCase()) &&
 				(!fullTime || job.contract === "Full Time")
 		);
-		console.log("search data", filteredData);
 		setData(filteredData);
 	};
 

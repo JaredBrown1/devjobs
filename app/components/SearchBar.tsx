@@ -18,25 +18,26 @@ const SearchBar = ({ onSearch }: any) => {
 				value={titleCompany}
 				onChange={(e) => setTitleCompany(e.target.value)}
 				placeholder="Filter by title, companies, expertise..."
-				className="h-[80px] w-[463px] border-r-[#6E8098] border-r-2 border-opacity-20 rounded-l-md"
+				className="h-[80px] w-[463px] border-r-[#6E8098] border-r-2 border-opacity-20 rounded-l-md pl-4"
 			/>
 			<input
 				type="text"
 				value={location}
 				onChange={(e) => setLocation(e.target.value)}
 				placeholder="Filter by location..."
-				className="h-[80px] w-[300px] border-r-[#6E8098] border-r-2 border-opacity-20"
+				className="h-[80px] w-[300px] border-r-[#6E8098] border-r-2 border-opacity-20 pl-4"
 			/>
 			{/* create a checkbox input fielt that says Full Time Only */}
 			<input
 				type="checkbox"
 				name="Full time"
 				checked={fullTime}
+				className="ml-4 mr-2"
 				onChange={(e) => setFullTime(e.target.checked)}
 			></input>
 			<label htmlFor="full_time">Full Time Only</label>
 			<button
-				className="bg-[#5964E0] text-white w-[141px] h-[48px] rounded-md hover:bg-[#939bf4]"
+				className="bg-[#5964E0] text-white w-[141px] h-[48px] rounded-md hover:bg-[#939bf4] ml-12"
 				onClick={handleSearch}
 			>
 				Search

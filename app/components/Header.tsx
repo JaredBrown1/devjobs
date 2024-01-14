@@ -1,17 +1,18 @@
 import Image from "next/image";
-import SearchBar from "./SearchBar";
 
 const Header = () => {
 	return (
-		<div className="flex flex-col justify-between bg-header-pattern bg-no-repeat h-[160px] w-full pt-[44px]">
+		<div className="flex flex-col justify-between bg-header-pattern bg-no-repeat h-[160px] w-[1440px] pt-[44px] mx-auto">
 			<div className="flex justify-between">
 				<div className="pl-[165px]">
-					<Image
-						src="/assets/desktop/logo.svg"
-						width={115}
-						height={32}
-						alt="logo"
-					/>
+					<a href="/">
+						<Image
+							src="/assets/desktop/logo.svg"
+							width={115}
+							height={32}
+							alt="logo"
+						/>
+					</a>
 				</div>
 
 				<div className="flex flex-row pr-[188px]">
